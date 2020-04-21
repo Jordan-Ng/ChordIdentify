@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed");
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,54 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#title {
+  border: 2px solid greenyellow;
+  text-align: center;
+  color: black;
+  text-shadow: 2px 2px 3px lightblue;
+  padding-top: 40px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 50px;
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}
+
+#mainButton {
+  float: left;
+  margin: 40px;
+  width: 250px;
+  height: 250px;
+  font: 13px/130px "Barlow Semi Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  text-align: center;
+  background: rgba(30, 144, 255, 0.6);
+  border-radius: 50%;
+  animation: shadow-pulse 1s infinite;
+}
+
+#buttonContainer {
+  border: 2px solid lightblue;
+  height: 100vh;
+  padding-left: 37.5vw;
+  /* padding-left: 37vw; */
+}
+
+#container {
+  background-image: url(./props/background.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* height: 100%; */
+  position: relative;
 }
