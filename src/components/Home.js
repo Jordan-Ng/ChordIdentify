@@ -10,10 +10,11 @@ function Home() {
       <div className="home" id="title">
         CHORDi
       </div>
-      <div id="buttonContainer">
-        <button id="mainButton" onClick={sayhi}>
-          What's That Chord?
-        </button>
+
+      <div id="clickMe">Let's Get You Started!</div>
+
+      <div id="mainButton" onClick={sayhi}>
+        <div className="buttonText">What's That Chord?</div>
       </div>
       {/* <footer>about</footer> */}
     </div>

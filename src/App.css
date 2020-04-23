@@ -1,49 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed");
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 #title {
   border: 2px solid greenyellow;
   text-align: center;
   color: black;
-  text-shadow: 2px 2px 3px lightblue;
+  text-shadow: 2px 2px 3px lightseagreen;
   padding-top: 40px;
   font-family: "Quicksand", sans-serif;
   font-size: 50px;
@@ -51,18 +12,29 @@
 
 @keyframes shadow-pulse {
   0% {
-    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 0 35px rgba(11, 151, 231, 0.2);
   }
   100% {
-    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.3);
   }
+}
+
+.buttonText {
+  padding-top: 25px;
 }
 
 #mainButton {
   float: left;
-  margin: 40px;
-  width: 250px;
-  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 47.5%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 200px;
+  height: 200px;
   font: 13px/130px "Barlow Semi Condensed", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -70,11 +42,13 @@
   text-align: center;
   background: rgba(30, 144, 255, 0.6);
   border-radius: 50%;
-  animation: shadow-pulse 1s infinite;
+  border: 2px solid white;
+
+  animation: shadow-pulse 2s infinite;
 }
 
 #buttonContainer {
-  border: 2px solid lightblue;
+  border: 2px solid purple;
   height: 100vh;
   padding-left: 37.5vw;
   /* padding-left: 37vw; */
@@ -85,6 +59,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* height: 100%; */
+  height: 100vh;
   position: relative;
+}
+
+#clickMe {
+  /* border: 2px solid white; */
+  color: white;
+  text-align: center;
+  margin-top: 120px;
+  padding-left: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
 }
